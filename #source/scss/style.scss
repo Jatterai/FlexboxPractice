@@ -84,25 +84,26 @@ body{
 @media (max-width: 1200px) {
 
 }
-
 @media (max-width: 992px) {
   .hello__row{
     flex-direction: column;
     padding: 20px 0px;
   }
   .hello__image{
+    border: 4px solid hsl(280, 30%, 30%);
     margin: 0px 0px 14px 0px;
     order: 1;
     flex: 1 0 100%;
-    padding: 0px 0px 20% 0px;
-    overflow: hidden;
+    padding: 0px 0px 15% 0px;
     position: relative;
     img{
       position: absolute;
       top: 0;
       left: 0;
+      height: 100%;
       width: 100%;
-      object-position: -25% 0;
+      object-fit: cover;
+      object-position: 50% 70%;
     }
   }
   .hello__body{
